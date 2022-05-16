@@ -1,9 +1,7 @@
+import Layout from "./pages/Layout";
+
 function App() {
-  return (
-    <div>
-      <h1>Student Portal</h1>
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;
