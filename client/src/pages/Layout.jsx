@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
 
@@ -10,7 +11,7 @@ const Layout = () => {
       </aside>
       <main className="flex-1 ml-60 p-10  text-light min-h-screen">
         <Navbar />
-        <h1>Main</h1>
+        <Outlet />
       </main>
     </div>
   );

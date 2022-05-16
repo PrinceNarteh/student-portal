@@ -1,7 +1,7 @@
-import Layout from "./pages/Layout";
+import Router from "./Router";
 
 function App() {
-  return <Layout />;
+  return <Router />;
 }
 
 export default App;

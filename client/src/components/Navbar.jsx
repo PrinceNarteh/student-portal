@@ -11,13 +11,15 @@ const Navbar = () => {
         </div>
         <span>Notification</span>
       </div>
-      <span className="divide-x-2">|</span>
-      <p className="text-lg">Jane Doe</p>
-      <img
-        src="/images/profile.jpg"
-        alt="Profile Picture"
-        className="w-11 h-11 rounded-full"
-      />
+      <span>|</span>
+      <div className="flex space-x-2 items-center">
+        <p className="text-lg">Jane Doe</p>
+        <img
+          src="/images/profile.jpg"
+          alt="Profile Picture"
+          className="w-11 h-11 rounded-full"
+        />
+      </div>
     </div>
   );
 };
