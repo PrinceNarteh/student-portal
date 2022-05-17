@@ -6,6 +6,7 @@ import {
   IdentificationIcon,
   PresentationChartLineIcon,
 } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -20,9 +21,14 @@ const SideBar = () => {
             Students Section
           </h3>
           <ul className="pl-5 mt-3 space-y-2">
-            <li className="flex text-light space-x-2 cursor-pointer hover:bg-lightTeal rounded-r-full pl-2 py-1 transition-colors duration-500">
-              <UserAddIcon className="w-5" />
-              <span>Register Student</span>
+            <li className=" cursor-pointer hover:bg-lightTeal rounded-r-full pl-2 py-1 transition-colors duration-500">
+              <Link
+                to="/register-student"
+                className="flex text-light space-x-2"
+              >
+                <UserAddIcon className="w-5" />
+                <span>Register Student</span>
+              </Link>
             </li>
             <li className="flex text-light space-x-2 cursor-pointer hover:bg-lightTeal rounded-r-full pl-2 py-1 transition-colors duration-500">
               <CashIcon className="w-5" />
